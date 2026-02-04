@@ -68,8 +68,9 @@ function initNavigation() {
 function initTypingEffect() {
   const textElement = document.querySelector(".typing-text");
   const phrases = [
-    "Full Stack Developer",
-    "UI/UX Enthusiast",
+    "Full Stack Software Engineer",
+    "Backend Developer",
+    "Frontend Specialist",
     "Problem Solver",
     "Code Artisan",
   ];
