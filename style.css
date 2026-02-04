@@ -342,7 +342,11 @@ a:focus-visible {
 }
 
 .code-window {
-  background: linear-gradient(135deg, rgba(26, 34, 80, 0.8) 0%, rgba(30, 42, 92, 0.8) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(26, 34, 80, 0.8) 0%,
+    rgba(30, 42, 92, 0.8) 100%
+  );
   border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 25px 60px rgba(59, 130, 246, 0.2);
@@ -671,7 +675,11 @@ a:focus-visible {
 }
 
 .skill-category {
-  background: linear-gradient(135deg, rgba(26, 34, 80, 0.6) 0%, rgba(31, 42, 92, 0.6) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(26, 34, 80, 0.6) 0%,
+    rgba(31, 42, 92, 0.6) 100%
+  );
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
   padding: 2.5rem;
@@ -689,7 +697,11 @@ a:focus-visible {
   right: -50%;
   width: 200px;
   height: 200px;
-  background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(59, 130, 246, 0.1) 0%,
+    transparent 70%
+  );
   border-radius: 50%;
   pointer-events: none;
 }
@@ -698,7 +710,11 @@ a:focus-visible {
   transform: translateY(-8px);
   border-color: rgba(59, 130, 246, 0.5);
   box-shadow: 0 20px 60px rgba(59, 130, 246, 0.25);
-  background: linear-gradient(135deg, rgba(26, 34, 80, 0.8) 0%, rgba(31, 42, 92, 0.8) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(26, 34, 80, 0.8) 0%,
+    rgba(31, 42, 92, 0.8) 100%
+  );
 }
 
 .category-header {
@@ -881,11 +897,17 @@ a:focus-visible {
   width: 28px;
   height: 28px;
   top: calc(2rem - 6px);
-  box-shadow: 0 0 0 10px rgba(59, 130, 246, 0.25), 0 0 20px rgba(59, 130, 246, 0.3);
+  box-shadow:
+    0 0 0 10px rgba(59, 130, 246, 0.25),
+    0 0 20px rgba(59, 130, 246, 0.3);
 }
 
 .experience-card {
-  background: linear-gradient(135deg, rgba(26, 34, 80, 0.6) 0%, rgba(31, 42, 92, 0.6) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(26, 34, 80, 0.6) 0%,
+    rgba(31, 42, 92, 0.6) 100%
+  );
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   padding: 2rem;
@@ -972,7 +994,11 @@ a:focus-visible {
 }
 
 .project-card {
-  background: linear-gradient(135deg, rgba(26, 34, 80, 0.6) 0%, rgba(31, 42, 92, 0.6) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(26, 34, 80, 0.6) 0%,
+    rgba(31, 42, 92, 0.6) 100%
+  );
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
   overflow: hidden;
@@ -986,7 +1012,11 @@ a:focus-visible {
   transform: translateY(-12px);
   border-color: rgba(59, 130, 246, 0.5);
   box-shadow: 0 20px 60px rgba(59, 130, 246, 0.25);
-  background: linear-gradient(135deg, rgba(26, 34, 80, 0.8) 0%, rgba(31, 42, 92, 0.8) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(26, 34, 80, 0.8) 0%,
+    rgba(31, 42, 92, 0.8) 100%
+  );
 }
 
 .project-image {
@@ -1208,7 +1238,11 @@ a:focus-visible {
 
 /* Contact Form */
 .contact-form {
-  background: linear-gradient(135deg, rgba(26, 34, 80, 0.6) 0%, rgba(31, 42, 92, 0.6) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(26, 34, 80, 0.6) 0%,
+    rgba(31, 42, 92, 0.6) 100%
+  );
   padding: 3rem;
   border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -1240,7 +1274,6 @@ a:focus-visible {
   border-color: var(--accent);
   background: rgba(10, 14, 39, 0.6);
   box-shadow: 0 0 20px rgba(59, 130, 246, 0.2);
-}
 }
 
 .form-group label {
@@ -1655,7 +1688,11 @@ a:focus-visible {
 
 .detail-item {
   padding: 2rem;
-  background: linear-gradient(135deg, rgba(26, 34, 80, 0.6) 0%, rgba(31, 42, 92, 0.6) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(26, 34, 80, 0.6) 0%,
+    rgba(31, 42, 92, 0.6) 100%
+  );
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   backdrop-filter: blur(10px);
