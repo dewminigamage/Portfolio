@@ -197,8 +197,6 @@ function initFormValidation() {
   const formStatus = document.querySelector(".form-status");
 
   form.addEventListener("submit", (e) => {
-    e.preventDefault();
-
     // Reset previous errors
     clearErrors();
 
@@ -228,31 +226,17 @@ function initFormValidation() {
       isValid = false;
     }
 
-    if (isValid) {
-      // Simulate form submission
-      const submitBtn = form.querySelector('button[type="submit"]');
-      const originalText = submitBtn.innerHTML;
-
-      submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-      submitBtn.disabled = true;
-
-      setTimeout(() => {
-        showFormStatus(
-          "success",
-          "Message sent successfully! I'll get back to you soon.",
-        );
-        form.reset();
-        submitBtn.innerHTML = originalText;
-        submitBtn.disabled = false;
-
-        // Clear success message after 5 seconds
-        setTimeout(() => {
-          formStatus.style.display = "none";
-        }, 5000);
-      }, 1500);
-    } else {
+    if (!isValid) {
+      e.preventDefault();
       showFormStatus("error", "Please fix the errors above.");
+      return false;
     }
+
+    // If valid, allow Formspree to submit naturally
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const originalText = submitBtn.innerHTML;
+    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+    submitBtn.disabled = true;
   });
 
   // Real-time validation
