@@ -406,3 +406,53 @@ document.addEventListener("visibilitychange", () => {
     document.body.classList.remove("paused");
   }
 });
+
+/* ==========================================
+   PROJECT IMAGE CAROUSEL
+   ========================================== */
+function changeProjectImage(event, direction) {
+  event.preventDefault();
+  event.stopPropagation();
+
+  const carouselContainer = event.target.closest(".project-carousel");
+  const images = carouselContainer.querySelectorAll(".project-img");
+  const dots = event.target.closest(".project-image").querySelectorAll(".dot");
+
+  let currentIndex = 0;
+  images.forEach((img, index) => {
+    if (img.classList.contains("active")) {
+      currentIndex = index;
+    }
+  });
+
+  // Remove active class from current image and dot
+  images[currentIndex].classList.remove("active");
+  dots[currentIndex].classList.remove("active");
+
+  // Calculate new index
+  currentIndex = (currentIndex + direction + images.length) % images.length;
+
+  // Add active class to new image and dot
+  images[currentIndex].classList.add("active");
+  dots[currentIndex].classList.add("active");
+}
+
+function goToProjectImage(event, index) {
+  event.preventDefault();
+  event.stopPropagation();
+
+  const dotsContainer = event.target.closest(".carousel-dots");
+  const carouselContainer = dotsContainer
+    .closest(".project-image")
+    .querySelector(".project-carousel");
+  const images = carouselContainer.querySelectorAll(".project-img");
+  const dots = dotsContainer.querySelectorAll(".dot");
+
+  // Remove active class from all images and dots
+  images.forEach((img) => img.classList.remove("active"));
+  dots.forEach((dot) => dot.classList.remove("active"));
+
+  // Add active class to selected image and dot
+  images[index].classList.add("active");
+  dots[index].classList.add("active");
+}
