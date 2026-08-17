@@ -1087,6 +1087,9 @@ a:focus-visible {
   justify-content: space-between;
   padding: 0 1rem;
   z-index: 5;
+  /* the bar spans the full card width across the centre, where the overlay
+     links sit - let clicks fall through to them, keep the arrows clickable */
+  pointer-events: none;
 }
 
 .project-card:hover .carousel-controls {
@@ -1094,6 +1097,7 @@ a:focus-visible {
 }
 
 .carousel-btn {
+  pointer-events: auto;
   width: 40px;
   height: 40px;
   border-radius: 50%;
